@@ -1,7 +1,7 @@
 # Ov-GSR
 The official code for From Semantics, Scene to Instance-awareness: Distilling Foundation Model for Open-vocabulary Grounded Situation Recognition
 
-# dataset
+# Dataset
 Download the [images](https://swig-data-weights.s3.us-east-2.amazonaws.com/images_512.zip), and [datasets](https://drive.google.com/drive/folders/1ftpQVou9zgPWqL2X7bbqeNPXwoM50hGv?usp=sharing).
 
 # Pre-process image and text to train on low-memory GPU
