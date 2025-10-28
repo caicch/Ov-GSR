@@ -1,0 +1,6 @@
+verb: scraping 
+role: agent, noun: person.n.01 
+role: scrapeditem, noun: brow.n.01 
+role: tool, noun: scraper.n.01 
+role: place, noun: salon.n.02 
+the person scrapes the brow with a scraper at the salon.
