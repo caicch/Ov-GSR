@@ -23,7 +23,8 @@ python main.py --saved_model ckpt/checkpoint.pth --output_dir Ov-GSR --test True
 
 # Acknowledgement
 This code is built based on the:
-Collaborative Transformers for Grounded Situation Recognition [Coformer](https://github.com/jhcho99/CoFormer)
+Collaborative Transformers for Grounded Situation Recognition [Coformer](https://github.com/jhcho99/CoFormer). 
+
 Open Scene Understanding: Grounded Situation Recognition Meets Segment Anything for Helping People with Visual Impairments [OpenSU](https://github.com/RuipingL/OpenSU?tab=readme-ov-file)
 
 # Citation
