@@ -9,6 +9,7 @@ Download the [images](https://swig-data-weights.s3.us-east-2.amazonaws.com/image
   2. Run CLIP_feat.py to encode and save the CLIP image features
   3. Run clip_4_text.py to encode and save caption features
   4. Run action_embedding.py and class_embedding.py to save action and object text features
+Adjust the path for the saved features folder/files in datasets/swig.py and models/ovgsr.py accordingly.
 
 # Training
 Use train_L10_with_obj_cap_refined.json for training.
@@ -17,7 +18,11 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 -
 ```
 
 # Evaluation
-Change the testing dataset in datasets/swig.py line 421 for val and line 422 for test. dev.json, dev_L10_unseen_with_obj_cap_refined.json, dev_L20_rare_with_obj_cap_refined.json for dev set. test.json, test_L10_unseen_with_obj_cap_refined.json, test_L20_rare_with_obj_cap_refined.json for test set.
+Change the testing dataset in datasets/swig.py line 421 for val and line 422 for testing. 
+
+dev.json, dev_L10_unseen_with_obj_cap_refined.json, dev_L20_rare_with_obj_cap_refined.json to test the dev set. 
+
+test.json, test_L10_unseen_with_obj_cap_refined.json, test_L20_rare_with_obj_cap_refined.json to test the test set.
 ```
 python main.py --saved_model ckpt/checkpoint.pth --output_dir Ov-GSR --dev True  # Evaluation on develpment set
 python main.py --saved_model ckpt/checkpoint.pth --output_dir Ov-GSR --test True # Evaluation on test set
