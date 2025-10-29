@@ -1,5 +1,5 @@
 # Ov-GSR
-The official code for From Semantics, Scene to Instance-awareness: Distilling Foundation Model for Open-vocabulary Grounded Situation Recognition
+The official code for From Semantics, Scene to Instance-awareness: Distilling Foundation Model for Open-vocabulary Grounded Situation Recognition (ACM MM 2025)[here](https://dl.acm.org/doi/abs/10.1145/3746027.3755235)
 
 # Dataset
 Download the [images](https://swig-data-weights.s3.us-east-2.amazonaws.com/images_512.zip), and [datasets](https://drive.google.com/drive/folders/1ftpQVou9zgPWqL2X7bbqeNPXwoM50hGv?usp=sharing).
