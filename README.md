@@ -11,11 +11,13 @@ Download the [images](https://swig-data-weights.s3.us-east-2.amazonaws.com/image
   4. Run action_embedding.py and class_embedding.py to save action and object text features
 
 # Training
+Use train_L10_with_obj_cap_refined.json for training.
 ```
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --use_env main.py   --batch_size 32 --epochs 10 --num_workers 4 --num_tr_dec_layers 1 --dropout 0.10 --hidden_dim 512 --output_dir Ov-GSR
 ```
 
 # Evaluation
+Change the testing dataset in datasets/swig.py line 421 for val and line 422 for test. dev.json, dev_L10_unseen_with_obj_cap_refined.json, dev_L20_rare_with_obj_cap_refined.json for dev set. test.json, test_L10_unseen_with_obj_cap_refined.json, test_L20_rare_with_obj_cap_refined.json for test set.
 ```
 python main.py --saved_model ckpt/checkpoint.pth --output_dir Ov-GSR --dev True  # Evaluation on develpment set
 python main.py --saved_model ckpt/checkpoint.pth --output_dir Ov-GSR --test True # Evaluation on test set
