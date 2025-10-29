@@ -9,7 +9,7 @@ Download the [images](https://swig-data-weights.s3.us-east-2.amazonaws.com/image
   2. Run CLIP_feat.py to encode and save the CLIP image features
   3. Run clip_4_text.py to encode and save caption features
   4. Run action_embedding.py and class_embedding.py to save action and object text features
-  5. 
+     
 Adjust the path for the saved features folder/files in datasets/swig.py and models/ovgsr.py accordingly.
 
 # Training
